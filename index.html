@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab &rarr; Backbone.js</title>
+	<meta name="author" content="Ram Ratan Maurya">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="page">
+		<header>
+			<h1 class="site-title"><a href="#">Backbone.js Lab</a></h1>
+		</header>
+
+		<div id="todo"></div>
+	</div>
+
+	<script type="text/template" id="item-template">
+	    <div>
+	      <input id="todo_complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
+	      <%= title %>
+	    </div>
+    </script>
+
+	<script src="js/lib/jquery-1.9.0.min.js"></script>
+	<script src="js/lib/underscore.min.js"></script>
+	<script src="js/lib/backbone.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
